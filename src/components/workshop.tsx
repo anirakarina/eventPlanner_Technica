@@ -1,4 +1,4 @@
-const Workshop = (props) => {
+const Workshop = (props: any) => {
     const title = props.title;
     const time = props.time;
     const tags = props.tags;
@@ -8,7 +8,7 @@ const Workshop = (props) => {
             <p>{title}</p>
             <p>{time}</p>
             <div>
-                {tags.map((t) => (
+                {tags.map((t: string) => (
                     <span>{t}</span>
                 ))}
             </div>
@@ -17,3 +17,5 @@ const Workshop = (props) => {
         </>
     );
 }
+
+export default Workshop;

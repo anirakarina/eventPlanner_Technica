@@ -1,6 +1,6 @@
-import Workshop from './workshop.js';
+import Workshop from './workshop.tsx';
 
-const Calendar = (props) =>{
+const Calendar = (props: any) =>{
     const day = props.day;
     const workshops = props.workshops;
     return(
@@ -26,11 +26,13 @@ const Calendar = (props) =>{
             <div>
                 <h2>{day}</h2>
                 <div>{/*The map will list all of the workshop components in the day*/}
-                {workshops.map((wshp)=>(
-                    <div>{wshp}</div>
-                ))}
+                {workshops.map((workshop:any) => {
+                    <Workshop title={workshop.title} time={workshop.time} tags={workshop.tags} desc={workshop.desc}/>
+                })};
             </div>
             </div>
         </>
     );
 }
+
+export default Calendar;
