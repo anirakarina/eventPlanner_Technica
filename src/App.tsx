@@ -5,19 +5,20 @@ import './App.css'
 import Calendar from '../src/components/calendar.tsx';
 //import Workshop from '/components/workshop.tsx';
 
+export type workshop = {
+  title: string;
+  time: string;
+  tags: string[];
+  desc: string;
+}
+
+export type calendar = {
+  day: string;
+  workshops: workshop[];
+}
+
 function App() {
   //const [count, setCount] = useState(0)
-  interface workshop {
-    title: string;
-    time: string;
-    tags: string[];
-    desc: string;
-  }
-
-  interface calendar {
-    day: string;
-    workshops: workshop[];
-  }
 
   const Sat_workshops: workshop[] = [
     {
@@ -52,7 +53,7 @@ function App() {
   const Sat_calendar: calendar = {
     day: "Saturday",
     workshops: Sat_workshops
-  };
+  }
 
   const Sun_calendar: calendar = {
     day: "Sunday",
@@ -61,8 +62,8 @@ function App() {
 
   return (
     <>
-      <Calendar day={Sat_calendar} workshops={Sat_calendar}/>
-      <Calendar day={Sun_calendar} workshops={Sun_calendar}/>
+      <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
+      <Calendar day={Sun_calendar.day} workshops={Sun_calendar.workshops}/>
     </>
   )
 }

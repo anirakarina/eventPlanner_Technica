@@ -1,4 +1,6 @@
-const Workshop = (props: any) => {
+import type {workshop} from '../App.tsx';
+
+const Workshop = (props: workshop) => {
     const title = props.title;
     const time = props.time;
     const tags = props.tags;
