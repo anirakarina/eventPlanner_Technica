@@ -3,9 +3,11 @@
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Calendar from '../src/components/calendar.tsx';
-//import Workshop from '/components/workshop.tsx';
 
-export type workshop = {
+//import Workshop from '/components/workshop.tsx';
+//the intrinsicElements thing lets you use the className attribute that are in regular components
+export type workshop = React.JSX.IntrinsicElements['div'] & {
+  className: string;
   title: string;
   time: string;
   tags: string[];
@@ -22,12 +24,14 @@ function App() {
 
   const Sat_workshops: workshop[] = [
     {
+      className: "start-9",
       title: "React 101",
       time: "9AM-10AM",
       tags: ["beginner", "front-end dev", "javascript", "CSS", "HTML", "React"],
       desc: "An introduction to creating apps with React and nodejs! No background in front end development necessary!"
     },
     {
+      className: "start-15",
       title: "Networking for business",
       time: "3PM-4PM",
       tags: ["Entrepreneurship", "Startup", "Networking"],
@@ -37,12 +41,14 @@ function App() {
 
   const Sun_workshops: workshop[] = [
     {
+      className: "start-20",
       title: "Computer Science research",
       time: "8PM-9PM",
       tags: ["Computer Science", "Interdisciplinary", "Research"],
       desc: "This workshop will introduce you to the various fields of research within computer science and its interdisciplinary areas, as well as give advice as to how to find research opportunities!"
     },
     {
+      className: "start-16",
       title: "Working with Django",
       time: "4PM-5PM",
       tags: ["Back-end dev", "beginner", "Django", "Python"],
@@ -62,8 +68,15 @@ function App() {
 
   return (
     <>
-      <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
-      <Calendar day={Sun_calendar.day} workshops={Sun_calendar.workshops}/>
+      <div className="schedule">
+        <div className="dayOne">
+          <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
+        </div>
+
+        <div className="dayTwo">
+          <Calendar day={Sun_calendar.day} workshops={Sun_calendar.workshops}/>
+        </div>
+      </div>
     </>
   )
 }

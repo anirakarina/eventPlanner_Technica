@@ -1,4 +1,5 @@
 import type {workshop} from '../App.tsx';
+import '../App.css';
 
 const Workshop = (props: workshop) => {
     const title = props.title;
@@ -7,15 +8,18 @@ const Workshop = (props: workshop) => {
     const desc = props.desc;
     return(
         <>
-            <p>{title}</p>
-            <p>{time}</p>
-            <div>
-                {tags.map((t: string) => (
-                    <span>{t}</span>
-                ))}
+            <div className={`event ${props.className}`}>
+                <h2>{title}</h2>
+                <input className="flag" type="button" value="Flag Event"></input>
+                <input className="remind" type="button" value="Remind Me"></input>
+                <p>{time}</p>
+                <div>
+                    {tags.map((t: string) => (
+                        <span>{t + ", "}</span>
+                    ))}
+                </div>
+                <p>{desc}</p>
             </div>
-            <br></br>
-            <p>{desc}</p>
         </>
     );
 }
