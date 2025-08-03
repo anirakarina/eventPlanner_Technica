@@ -1,6 +1,6 @@
 import Workshop from './workshop.tsx';
-import type {calendar} from '../App.tsx';
-import type {workshop} from '../App.tsx';
+import type {calendar} from '../types/calendar.ts';
+import type {workshop} from '../types/workshop.ts';
 import '../App.css';
 
 const Calendar = (props: calendar) =>{
@@ -31,7 +31,7 @@ const Calendar = (props: calendar) =>{
                     <div className="timeMarker start-24">12 AM</div>
                     {workshops.map((wshp: workshop) => {
                         return <Workshop className={wshp.className} title={wshp.title} time={wshp.time} tags={wshp.tags} desc={wshp.desc}/>
-                    })};
+                    })}
                 </div>
             </div>
         </>

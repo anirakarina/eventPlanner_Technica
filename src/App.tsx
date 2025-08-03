@@ -3,21 +3,8 @@
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Calendar from '../src/components/calendar.tsx';
-
-//import Workshop from '/components/workshop.tsx';
-//the intrinsicElements thing lets you use the className attribute that are in regular components
-export type workshop = React.JSX.IntrinsicElements['div'] & {
-  className: string;
-  title: string;
-  time: string;
-  tags: string[];
-  desc: string;
-}
-
-export type calendar = {
-  day: string;
-  workshops: workshop[];
-}
+import type {calendar} from '../src/types/calendar.ts';
+import type {workshop} from '../src/types/workshop.ts';
 
 function App() {
   //const [count, setCount] = useState(0)

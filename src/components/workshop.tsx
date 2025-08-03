@@ -1,4 +1,4 @@
-import type {workshop} from '../App.tsx';
+import type {workshop} from '../types/workshop.ts';
 import '../App.css';
 
 const Workshop = (props: workshop) => {
