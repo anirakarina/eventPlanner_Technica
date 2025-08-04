@@ -11,14 +11,14 @@ function App() {
 
   const Sat_workshops: workshop[] = [
     {
-      className: "start-9",
+      className: "start-9 beginner",
       title: "React 101",
       time: "9AM-10AM",
-      tags: ["beginner", "front-end dev", "javascript", "CSS", "HTML", "React"],
+      tags: ["Beginner", "Front-end dev", "Javascript", "CSS", "HTML", "React"],
       desc: "An introduction to creating apps with React and nodejs! No background in front end development necessary!"
     },
     {
-      className: "start-15",
+      className: "start-15 startup",
       title: "Networking for business",
       time: "3PM-4PM",
       tags: ["Entrepreneurship", "Startup", "Networking"],
@@ -28,17 +28,17 @@ function App() {
 
   const Sun_workshops: workshop[] = [
     {
-      className: "start-20",
+      className: "start-20 research",
       title: "Computer Science research",
       time: "8PM-9PM",
       tags: ["Computer Science", "Interdisciplinary", "Research"],
       desc: "This workshop will introduce you to the various fields of research within computer science and its interdisciplinary areas, as well as give advice as to how to find research opportunities!"
     },
     {
-      className: "start-16",
+      className: "start-16 general",
       title: "Working with Django",
       time: "4PM-5PM",
-      tags: ["Back-end dev", "beginner", "Django", "Python"],
+      tags: ["Back-end dev", "Django", "Python"],
       desc: "An introduction to backend development using the python framework Django! No backend development experience required."
     }
   ];

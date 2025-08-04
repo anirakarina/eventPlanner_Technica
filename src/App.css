@@ -147,13 +147,13 @@
   grid-row-end: 17;
 }
 
+/*All workshop/event related stuff*/
 .event{
   box-sizing: border-box;
   border-radius: 25px;
-  border: solid 5px #e28f3b;
-  background-color: #FFAD59; /*replace this with the colors file later*/
   padding: 1em;
   position: relative;
+  color: #25233F;
 }
 
 .flag{
@@ -166,4 +166,25 @@
   position: absolute;
   top: 50px;
   right: 16px;
+}
+
+.beginner{
+  background-color: #FFAD59;
+  border: solid 5px #e28f3b;
+
+}
+
+.general{
+  background-color: #98C7D5;
+  border: solid 5px #6baec2;
+}
+
+.startup{
+  background-color: #B396D1;
+  border: solid 5px #9874c0;
+}
+
+.research{
+  background-color: #CE9898;
+  border: solid 5px #c07a7a;
 }
