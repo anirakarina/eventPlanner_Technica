@@ -11,9 +11,9 @@ const theme = {
     trackResearch: '#CE9898'
 }
 
-const Colors = theme;
+const colors = theme;
 
-export default Colors;
+export default colors;
 
 //Using colors:
 //import colors from "@/src/colors";
