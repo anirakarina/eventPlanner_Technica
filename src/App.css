@@ -2,6 +2,205 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-} */
+  text-align: left;
+}
+*/
+.schedule{
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+  gap: 25px;
+  margin: 0;
+}
 
+/*Saturday*/
+.dayOne{
+  grid-column-start: 1;
+}
+
+/*Sunday*/
+.dayTwo{
+  grid-column-start: 2;
+}
+
+.calendar{
+  border-radius: 25px;
+  background-color: #130F1E;
+  padding: 1em;
+}
+
+.timeline{
+  display: grid;
+  border-radius: 25px;
+  background-color: #25233F;
+  padding: 1em;
+  grid-row: 17;
+  grid-column: 2;
+  grid-template-rows: auto 1fr;
+}
+
+/*the sections indicating what time an event is taking place in between*/
+.timeMarker{
+  display: grid;
+  grid-column-start: 1;
+  height: 50px;
+}
+
+/*placing events on the timeline*/
+.start-8{
+  grid-row-start: 1;
+}
+.start-9{
+  grid-row-start: 2;
+}
+.start-10{
+  grid-row-start: 3;
+}
+.start-11{
+  grid-row-start: 4;
+}
+.start-12{
+  grid-row-start: 5;
+}
+.start-13{ /*1pm*/
+  grid-row-start: 6;
+}
+.start-14{ /*2pm*/
+  grid-row-start: 7;
+}
+.start-15{ /*3pm*/
+  grid-row-start: 8;
+}
+.start-16{ /*4pm*/
+  grid-row-start: 9;
+}
+.start-17{ /*5pm*/
+  grid-row-start: 10;
+}
+.start-18{ /*6pm*/
+  grid-row-start: 11;
+}
+.start-19{ /*7pm*/
+  grid-row-start: 12;
+}
+.start-20{ /*8pm*/
+  grid-row-start: 13;
+}
+.start-21{ /*9pm*/
+  grid-row-start: 14;
+}
+.start-22{ /*10pm*/
+  grid-row-start: 15;
+}
+.start-23{ /*11pm*/
+  grid-row-start: 16;
+}
+.start-24{ /*12am*/
+  grid-row-start: 17;
+}
+.end-9{
+  grid-row-end: 2;
+}
+.end-10{
+  grid-row-end: 3;
+}
+.end-11{
+  grid-row-end: 4;
+}
+.end-12{
+  grid-row-end: 5;
+}
+.end-13{
+  grid-row-end: 6;
+}
+.end-14{
+  grid-row-end: 7;
+}
+.end-15{
+  grid-row-end: 8;
+}
+.end-16{
+  grid-row-end: 9;
+}
+.end-17{
+  grid-row-end: 10;
+}
+.end-18{
+  grid-row-end: 11;
+}
+.end-19{
+  grid-row-end: 12;
+}
+.end-20{
+  grid-row-end: 13;
+}
+.end-21{ /*9pm*/
+  grid-row-end: 14;
+}
+.end-22{
+  grid-row-end: 15;
+}
+.end-23{
+  grid-row-end: 16;
+}
+.end-24{
+  grid-row-end: 17;
+}
+
+/*All workshop/event related stuff*/
+.event{
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 1em;
+  position: relative;
+  color: #25233F;
+}
+
+.flag{
+  position: absolute;
+  top: 15px;
+  right: 17px;
+}
+.flag img{
+  object-fit: contain;
+  width: 2.5vw;
+  height: auto;
+}
+.flag img:hover{
+  filter: invert(30);
+}
+
+.remind{
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+.remind img{
+  object-fit: contain;
+  width: 2.5vw;
+  height: auto;
+}
+.remind img:hover{
+  filter: invert(30);
+}
+
+.beginner{
+  background-color: #FFAD59;
+  border: solid 5px #e28f3b;
+
+}
+
+.general{
+  background-color: #98C7D5;
+  border: solid 5px #6baec2;
+}
+
+.startup{
+  background-color: #B396D1;
+  border: solid 5px #9874c0;
+}
+
+.research{
+  background-color: #CE9898;
+  border: solid 5px #c07a7a;
+}
