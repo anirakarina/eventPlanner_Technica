@@ -10,8 +10,12 @@ const Workshop = (props: workshop) => {
         <>
             <div className={`event ${props.className}`}>
                 <h2>{title}</h2>
-                <input className="flag" type="button" value="Flag Event"></input>
-                <input className="remind" type="button" value="Remind Me"></input>
+                <a className="flag">
+                    <img src="src\assets\Technica_Flag_Unselected.svg"></img>
+                </a>
+                <a className="remind">
+                    <img src="src\assets\Technica_Remind_Unselected.svg"></img>
+                </a>
                 <p>{time}</p>
                 <div>
                     {tags.map((t: string) => (

@@ -158,14 +158,30 @@
 
 .flag{
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 17px;
+}
+.flag img{
+  object-fit: contain;
+  width: 2.5vw;
+  height: auto;
+}
+.flag img:hover{
+  filter: invert(30);
 }
 
 .remind{
   position: absolute;
-  top: 50px;
-  right: 16px;
+  top: 60px;
+  right: 20px;
+}
+.remind img{
+  object-fit: contain;
+  width: 2.5vw;
+  height: auto;
+}
+.remind img:hover{
+  filter: invert(30);
 }
 
 .beginner{
