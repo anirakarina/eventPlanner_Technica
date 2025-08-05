@@ -1,4 +1,4 @@
-import '../FullSchedule.css'
+import '../App.css'
 
 const FullSchedule = () => {
 

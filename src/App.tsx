@@ -1,6 +1,3 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
 import './App.css'
 import FullSchedule from './pages/FullSchedule'
 
@@ -9,7 +6,6 @@ import type {calendar} from '../src/types/calendar.ts';
 import type {workshop} from '../src/types/workshop.ts';
 
 function App() {
-  //const [count, setCount] = useState(0)
 
   const Sat_workshops: workshop[] = [
     {
@@ -57,16 +53,16 @@ function App() {
 
   return (
     <>
+      <FullSchedule/>
       <div className="schedule">
-        <div className="dayOne">
+        <div style={{marginLeft: 20}} className='dayOne'>
           <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
         </div>
 
-        <div className="dayTwo">
+        <div style={{marginRight: 20}} className="dayTwo">
           <Calendar day={Sun_calendar.day} workshops={Sun_calendar.workshops}/>
         </div>
       </div>
-      <FullSchedule/>
     </>
   )
 }

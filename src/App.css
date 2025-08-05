@@ -11,6 +11,7 @@
   grid-column: 2;
   gap: 25px;
   margin: 0;
+  margin-top: 125px;
 }
 
 /*Saturday*/
@@ -203,4 +204,26 @@
 .research{
   background-color: #CE9898;
   border: solid 5px #c07a7a;
+}
+
+/* Schedule pages styles */
+.navbar {
+  background-color:#130F1E;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 0%;
+  height: 100px;
+  width:100vw;
+  box-shadow: 0 5px 6px -1px #0000001a;
+  margin-bottom: 10em;
+}
+
+.navbar > div {
+  display: flex;
+  align-self: center;
+  font-size: 1.4em;
+  font-weight:700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Medium, sans-serif;
 }
