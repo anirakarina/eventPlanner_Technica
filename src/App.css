@@ -227,3 +227,16 @@
   font-weight:700;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Medium, sans-serif;
 }
+
+.searchBar {
+  display: flex;
+  background-color:#25233F;
+  border: 0.1em, solid, #4D4A7D;
+  border-radius: 8px;
+  width: 100vw;
+  min-height: 2em;
+  align-items: center;
+  font-size: 1.2em;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}

@@ -4,6 +4,7 @@ import FullSchedule from './pages/FullSchedule'
 import Calendar from '../src/components/calendar.tsx';
 import type {calendar} from '../src/types/calendar.ts';
 import type {workshop} from '../src/types/workshop.ts';
+import SearchBar from './components/searchBar.tsx';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
   return (
     <>
       <FullSchedule/>
+      {/* <SearchBar/> */}
       <div className="schedule">
         <div style={{marginLeft: 20}} className='dayOne'>
           <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>

@@ -3,6 +3,7 @@ const theme = {
     dark: '#130F1E',
     text: '#FFFFFF',
     background: '#25233F',
+    outlines: '#4D4A7D',
     technicaBlue: '#10F7F8',
     technicaPink: '#FA7FAE',
     trackGeneral: '#98C7D5',
