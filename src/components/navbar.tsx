@@ -1,9 +1,9 @@
-import '../App.css'
+import '../App.css';
 import { CgProfile } from "react-icons/cg";
 
-const FullSchedule = () => {
+const Navbar = () => {
 
-  return (
+    return (
     <div className='navbar'>
       <div className='navlinks'>
         <div>Full Schedule</div>
@@ -14,4 +14,4 @@ const FullSchedule = () => {
   )
 }
 
-export default FullSchedule
+export default Navbar

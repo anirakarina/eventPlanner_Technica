@@ -5,6 +5,7 @@ import Calendar from '../src/components/calendar.tsx';
 import type {calendar} from '../src/types/calendar.ts';
 import type {workshop} from '../src/types/workshop.ts';
 import SearchBar from './components/searchBar.tsx';
+import Navbar from './components/navbar.tsx';
 
 function App() {
 
@@ -54,14 +55,14 @@ function App() {
 
   return (
     <>
-      <FullSchedule/>
-      {/* <SearchBar/> */}
+      <Navbar/>
+      <SearchBar/>
       <div className="schedule">
-        <div style={{marginLeft: 20}} className='dayOne'>
+        <div className='dayOne'>
           <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
         </div>
 
-        <div style={{marginRight: 20}} className="dayTwo">
+        <div className="dayTwo">
           <Calendar day={Sun_calendar.day} workshops={Sun_calendar.workshops}/>
         </div>
       </div>

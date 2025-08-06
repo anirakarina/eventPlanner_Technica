@@ -1,17 +1,9 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-}
-*/
 .schedule{
   display: grid;
   grid-row: 1;
   grid-column: 2;
-  gap: 25px;
-  margin: 0;
-  margin-top: 125px;
+  gap: 40px;
+  margin: 40px;
 }
 
 /*Saturday*/
@@ -210,19 +202,25 @@
 .navbar {
   background-color:#130F1E;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  position: absolute;
-  top: 0%;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
-  width:100vw;
   box-shadow: 0 5px 6px -1px #0000001a;
-  margin-bottom: 10em;
 }
 
-.navbar > div {
+.navlinks {
   display: flex;
-  align-self: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.profile-icon {
+  padding: 0px 40px;
+  font-size: 2em;
+}
+
+.navlinks > div {
+  display: flex;
   font-size: 1.4em;
   font-weight:700;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Medium, sans-serif;
@@ -231,12 +229,13 @@
 .searchBar {
   display: flex;
   background-color:#25233F;
-  border: 0.1em, solid, #4D4A7D;
+  border: 0.1em, solid, #FFFFFF;
   border-radius: 8px;
-  width: 100vw;
-  min-height: 2em;
+  height: 2em;
   align-items: center;
+  justify-content: space-between;
   font-size: 1.2em;
-  padding-left: 10px;
-  padding-bottom: 5px;
+  padding: 0px 10px 5px;
+  margin: 40px;
+  color: #FFFFFF;
 }
