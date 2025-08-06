@@ -1,16 +1,14 @@
 import '../App.css'
 import Navbar from '../components/navbar'
-import SearchBar from '../components/searchBar'
 import Calendar from '../components/calendar.tsx';
 import { Sat_calendar } from '../demoData.tsx';
 import { Sun_calendar } from '../demoData.tsx';
 
-const FullSchedule = () => {
+const MySchedule = () => {
 
   return (
     <>
       <Navbar />
-      <SearchBar />
       <div className="schedule">
         <div className='dayOne'>
           <Calendar day={Sat_calendar.day} workshops={Sat_calendar.workshops}/>
@@ -24,4 +22,4 @@ const FullSchedule = () => {
   )
 }
 
-export default FullSchedule
+export default MySchedule
