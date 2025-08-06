@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Flag_selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.3 374.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #130f1e;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m72.72,6.41h44v33s56-33,124-6c75.4,29.94,105,21,105,21v127s-46,16-106-12c-93-40-124,8-124,8v190h-43V6.41Z"/>
+</svg>

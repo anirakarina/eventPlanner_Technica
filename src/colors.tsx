@@ -3,6 +3,7 @@ const theme = {
     dark: '#130F1E',
     text: '#FFFFFF',
     background: '#25233F',
+    outlines: '#4D4A7D',
     technicaBlue: '#10F7F8',
     technicaPink: '#FA7FAE',
     trackGeneral: '#98C7D5',
@@ -11,9 +12,9 @@ const theme = {
     trackResearch: '#CE9898'
 }
 
-const colors = theme;
+const Colors = theme;
 
-export default colors;
+export default Colors;
 
 //Using colors:
 //import colors from "@/src/colors";
