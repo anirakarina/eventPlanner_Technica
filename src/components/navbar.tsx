@@ -1,13 +1,14 @@
 import '../App.css';
 import { CgProfile } from "react-icons/cg";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
 
     return (
     <div className='navbar'>
       <div className='navlinks'>
-        <div>Full Schedule</div>
-        <div>My Schedule</div>
+        <Link to="/">Full Schedule</Link>
+        <Link to="/MySchedule">My Schedule</Link>
       </div>
       <CgProfile className='profile-icon'/>
     </div>
