@@ -1,15 +1,21 @@
 import './App.css'
-import FullSchedule from './pages/FullSchedule'
+import FullSchedule from './pages/FullSchedule';
 import MySchedule from './pages/MySchedule';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-      <FullSchedule />
-      <MySchedule />
-      {/* I just put both pages to see them both, you can remove whichever to view one at a time*/}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FullSchedule/>}/>
+        <Route path="/MySchedule" element={<MySchedule/>}/>
+        <Route path="/Login" element={<Login/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

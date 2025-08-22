@@ -1,6 +1,6 @@
 import express from "express";
 import axios from "axios";
-import { adminAuth } from "../firebaseAdmin";
+import { adminAuth } from "../src/firebaseAdmin";
 
 const router = express.Router();
 

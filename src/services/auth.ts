@@ -1,5 +1,5 @@
 // frontend/src/services/auth.ts
-import { auth } from "../../firebaseConfig";
+import { auth } from "../firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,

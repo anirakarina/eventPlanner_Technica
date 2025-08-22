@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await loginWithEmail(email, password);
-      window.location.href = "/dashboard";
+      window.location.href = "/";
     } catch (err) {
       console.error(err);
     }

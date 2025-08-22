@@ -9,7 +9,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       await signupWithEmail(email, password);
-      window.location.href = "/dashboard";
+      window.location.href = "/";
     } catch (err) {
       console.error(err);
     }
