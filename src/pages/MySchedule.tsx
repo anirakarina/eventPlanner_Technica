@@ -3,6 +3,8 @@ import Navbar from '../components/navbar'
 import Calendar from '../components/calendar.tsx';
 import { Sat_calendar } from '../demoData.tsx';
 import { Sun_calendar } from '../demoData.tsx';
+import {db} from "../firebase.ts";
+import type {calendar} from "../types/calendar.ts";
 
 const MySchedule = () => {
 
