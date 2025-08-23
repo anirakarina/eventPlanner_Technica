@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
   // apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -16,6 +17,7 @@ const firebaseConfig = {
   appId: "1:472815901107:web:4b66bba31c6298b65fd3c6"
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider(); // for Slack, will use OAuth redirect to backend
+export const db = getFirestore(app);

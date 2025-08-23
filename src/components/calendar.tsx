@@ -1,7 +1,8 @@
 import Workshop from './workshop.tsx';
 import type {calendar} from '../types/calendar.ts';
-import type {workshop} from '../types/workshop.ts';
+//import type {workshop} from '../types/workshop.ts';
 import '../App.css';
+import type { DocumentData } from 'firebase/firestore';
 
 const Calendar = (props: calendar) =>{
     const day = props.day;
@@ -29,7 +30,7 @@ const Calendar = (props: calendar) =>{
                     <div className="timeMarker start-22 end-23">10 PM</div>
                     <div className="timeMarker start-23 end-24">11 PM</div>
                     <div className="timeMarker start-24">12 AM</div>
-                    {workshops.map((wshp: workshop) => {
+                    {workshops.map((wshp: DocumentData) => {
                         return <Workshop className={wshp.className} title={wshp.title} time={wshp.time} tags={wshp.tags} desc={wshp.desc}/>
                     })}
                 </div>

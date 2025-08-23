@@ -1,6 +1,7 @@
-import type {workshop} from '../types/workshop.ts';
+import type { DocumentData } from 'firebase/firestore';
+//import type {workshop} from '../types/workshop.ts';
 
 export type calendar = {
   day: string;
-  workshops: workshop[];
+  workshops: DocumentData[];
 }
