@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { signupWithEmail, loginWithSlack } from "../services/auth";
+import {Link} from "react-router-dom";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -7,12 +8,7 @@ export default function Signup() {
 
   const handleEmailSignup = async (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      await signupWithEmail(email, password);
-    } catch (err) {
-      console.error(err);
-    }
-
+    signupWithEmail(email, password);
   };
 
   return (
@@ -25,11 +21,13 @@ export default function Signup() {
           value={password} onChange={(e) => setPassword(e.target.value)} />
         <button type="submit">Sign Up</button>
       </form>
+      <p id="error" style={{color: "red"}}></p>
 
       <hr />
       <button onClick={loginWithSlack}>
         Sign Up with Slack
       </button>
+      <p>Already have an account? <span><Link to="/Login">Login</Link></span></p>
     </div>
   );
 }

@@ -10,10 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<FullSchedule/>}/>
-        <Route path="/MySchedule" element={<MySchedule/>}/>
+        <Route path="/" element={<Signup/>}/>
         <Route path="/Login" element={<Login/>}/>
-        <Route path="/Signup" element={<Signup/>}/>
+        <Route path="/MySchedule" element={<MySchedule/>}/>
+        <Route path="/FullSchedule" element={<FullSchedule/>}/>
       </Routes>
     </BrowserRouter>
   )

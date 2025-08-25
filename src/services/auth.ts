@@ -44,10 +44,32 @@ auth.onAuthStateChanged(async (user) => {
 });
 
 export const signupWithEmail = (email: string, password: string) => {
-  createUserWithEmailAndPassword(auth, email, password);
+  createUserWithEmailAndPassword(auth, email, password)
+  .then(() => {
+    console.log("user created");
+  })
+  .catch((error: any) => {
+    if(error instanceof Error)
+    {
+      const errorMsg = document.getElementById("error") as HTMLElement;
+      errorMsg.innerHTML = error.message;
+    }
+    console.log(error.message);
+  })
 }
 export const loginWithEmail = (email: string, password: string) => {
-  signInWithEmailAndPassword(auth, email, password);
+  signInWithEmailAndPassword(auth, email, password)
+  .then(() => {
+    console.log("user signed in");
+  })
+  .catch((error: any) => {
+    if(error instanceof Error)
+    {
+      const errorMsg = document.getElementById("error") as HTMLElement;
+      errorMsg.innerHTML = error.message;
+    }
+    console.log(error.message);
+  })
 }
 
 export const loginWithSlack = async () => {
