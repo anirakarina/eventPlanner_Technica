@@ -12,7 +12,12 @@ import type { calendar } from '../types/calendar.ts';
 export async function getSatWorkshops(db: Firestore, sat: string){
   const satWkshpsRef = query(collection(db, sat));
   const satWkshpsSnapshot = await getDocs(satWkshpsRef);
-  const satWkshpsList = satWkshpsSnapshot.docs.map(doc => doc.data());
+  const satWkshpsList = satWkshpsSnapshot.docs.map(doc => {
+    return {
+      wshpRef: doc.ref.path,
+      ...doc.data()
+    }
+  });
   return satWkshpsList;
   //return satWkshpsSnapshot;
   //return satWkshpsRef;

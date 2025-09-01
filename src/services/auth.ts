@@ -81,4 +81,15 @@ export const loginWithSlackToken = async (customToken: string) => {
   await signInWithCustomToken(auth, customToken);
 };
 
+export const addWorkshopToUser = async (wshpID: string) => {
+  if(!auth.currentUser) {
+    alert('Please log in');
+    return;
+  }
+  const uid = auth.currentUser.uid;
+  const userRef = doc(db, 'users', uid);
+  //Determine if the workshop is on Sunday or Saturday
+  //
+}
+
 export const logout = () => signOut(auth);

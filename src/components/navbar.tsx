@@ -7,10 +7,10 @@ const Navbar = () => {
     return (
     <div className='navbar'>
       <div className='navlinks'>
-        <Link to="/">Full Schedule</Link>
+        <Link to="/FullSchedule">Full Schedule</Link>
         <Link to="/MySchedule">My Schedule</Link>
         <Link to="/Login">Login</Link>
-        <Link to="/Signup">Signup</Link>
+        <Link to="/">Signup</Link>
       </div>
       <CgProfile className='profile-icon'/>
     </div>

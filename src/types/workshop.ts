@@ -5,4 +5,5 @@ export type workshop = React.JSX.IntrinsicElements['div'] & {
   time: string;
   tags: string[];
   desc: string;
+  wshpRef: string;
 }

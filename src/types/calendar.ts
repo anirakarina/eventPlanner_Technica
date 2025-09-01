@@ -3,5 +3,6 @@ import type { DocumentData } from 'firebase/firestore';
 
 export type calendar = {
   day: string;
-  workshops: DocumentData[];
+  // workshops: DocumentData[];
+  workshops: any[];
 }
